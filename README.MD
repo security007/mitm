@@ -18,7 +18,7 @@ MITM Tool
 
 options:
   -h, --help            show this help message and exit
-  --target TARGET       Target IP or hostname for the MITM attack
+  --target TARGET       Target IP for the MITM attack
   --gateway GATEWAY     Specify the gateway IP address
   --interface INTERFACE
                         Network interface to use

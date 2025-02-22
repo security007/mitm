@@ -119,7 +119,7 @@ Version: 1.0
 """
     print(banner)
     parser = argparse.ArgumentParser(description="MITM Tool")
-    parser.add_argument("--target", help="Target IP or hostname for the MITM attack", required=True)
+    parser.add_argument("--target", help="Target IP for the MITM attack", required=True)
     parser.add_argument("--gateway", help="Specify the gateway IP address", default="192.168.1.1")
     parser.add_argument("--interface", help="Network interface to use", default="wlan0")
     parser.add_argument("--port", help="Port for mitm proxy", default="8080")
