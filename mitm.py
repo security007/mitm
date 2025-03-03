@@ -39,7 +39,7 @@ class Mitm:
         """Check if arpspoof is working correctly."""
         self.print_message(f"Checking if ARP spoofing is successful for target {self.target} ", Colors.CYAN)
         output = subprocess.getoutput(f"arp -n {self.target}")
-        if "incomplete" in output:
+        if "incomplete" in output or "no entry" in output:
             print(f"{Colors.RED}FAILED{Colors.RESET}")
             print(output)
             # self.restore_config()
